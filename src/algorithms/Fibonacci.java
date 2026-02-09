@@ -1,17 +1,40 @@
 package algorithms;
 
+import java.math.BigInteger;
+
+
 public class Fibonacci {
+
     public static void main(String[] args) {
-        long a = 0, b = 1;
+        int count = 100;
 
-        System.out.println("First 100 Fibonacci numbers:");
+        generateFibonacci(count);
+    }
 
-        for (int i = 1; i <= 100; i++) {
-            System.out.print(a + " ");
-            long next = a + b;
-            a = b;
-            b = next;
+
+    public static void generateFibonacci(int n) {
+        if (n <= 0) {
+            System.out.println("Please enter a positive number");
+            return;
         }
+
+        BigInteger first = BigInteger.ZERO;
+        BigInteger second = BigInteger.ONE;
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(first);
+
+            if (i < n) {
+                System.out.print(", ");
+            }
+
+            BigInteger next = first.add(second);
+
+            // Shift values for next iteration
+            first = second;
+            second = next;
+        }
+
+        System.out.println(); // New line at the end
     }
 }
-
