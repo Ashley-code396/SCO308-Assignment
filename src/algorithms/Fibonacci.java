@@ -1,6 +1,6 @@
 package algorithms;
 
-public class Fibonacci100 {
+public class Fibonacci {
     public static void main(String[] args) {
         long a = 0, b = 1;
 

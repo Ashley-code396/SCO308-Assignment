@@ -1,11 +1,18 @@
 package algorithms;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = {5, 1, 4, 2, 8};
-        int n = arr.length;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
 
         System.out.println("Original Array: " + Arrays.toString(arr));
 
@@ -25,5 +32,6 @@ public class BubbleSort {
         }
 
         System.out.println("\nSorted Array: " + Arrays.toString(arr));
+        sc.close();
     }
 }

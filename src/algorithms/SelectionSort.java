@@ -2,11 +2,18 @@
 package algorithms;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] arr = {64, 25, 12, 22, 11};
-        int n = arr.length;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " integers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
 
         System.out.println("Original Array: " + Arrays.toString(arr));
 
@@ -26,5 +33,6 @@ public class SelectionSort {
         }
 
         System.out.println("Sorted Array: " + Arrays.toString(arr));
+        sc.close();
     }
 }
