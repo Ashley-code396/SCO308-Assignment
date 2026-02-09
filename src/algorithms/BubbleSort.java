@@ -1,3 +1,5 @@
+package algorithms;
+
 import java.util.Arrays;
 
 public class BubbleSort {
@@ -25,4 +27,3 @@ public class BubbleSort {
         System.out.println("\nSorted Array: " + Arrays.toString(arr));
     }
 }
-

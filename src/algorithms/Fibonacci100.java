@@ -1,3 +1,5 @@
+package algorithms;
+
 public class Fibonacci100 {
     public static void main(String[] args) {
         long a = 0, b = 1;
@@ -12,5 +14,4 @@ public class Fibonacci100 {
         }
     }
 }
-
 

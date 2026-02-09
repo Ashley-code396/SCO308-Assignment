@@ -1,3 +1,5 @@
+package algorithms;
+
 import java.util.Scanner;
 
 public class QuadraticEquation {
@@ -25,4 +27,3 @@ public class QuadraticEquation {
         }
     }
 }
-

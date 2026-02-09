@@ -12,12 +12,12 @@ algorithms and math exercises.
 - `src/QuadraticEquation.java` - solves a quadratic equation from user input.
 
 ## How to run
-Each file has its own `main` method. Compile and run a specific class, for
-example:
+Each file has its own `main` method and is in the `algorithms` package. Compile
+and run a specific class, for example:
 
 ```bash
 javac src/MergeSort.java
-java -cp src MergeSort
+java -cp src algorithms.MergeSort
 ```
 
 Programs that read input (`GCD_Euclid`, `QuadraticEquation`) will prompt in the

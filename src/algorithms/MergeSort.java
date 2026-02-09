@@ -1,3 +1,5 @@
+package algorithms;
+
 import java.util.Arrays;
 
 public class MergeSort {
@@ -48,4 +50,3 @@ public class MergeSort {
         System.out.println("Sorted Array: " + Arrays.toString(arr));
     }
 }
-
