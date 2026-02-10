@@ -30,11 +30,10 @@ public class Fibonacci {
 
             BigInteger next = first.add(second);
 
-            // Shift values for next iteration
             first = second;
             second = next;
         }
 
-        System.out.println(); // New line at the end
+        System.out.println();
     }
 }
