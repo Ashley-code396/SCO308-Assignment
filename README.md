@@ -51,3 +51,4 @@ java -cp src algorithms.MergeSort
 
 Programs that read input (`GCD_Euclid`, `QuadraticEquation`) will prompt in the
 terminal.
+
